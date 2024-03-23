@@ -1,0 +1,2 @@
+# *Word Bomb Mini* solver
+
