@@ -1,27 +1,37 @@
-use std::collections::{BTreeMap, HashMap};
+use std::collections::{BTreeMap, HashMap, HashSet};
 use std::fs::File;
 use std::io::{BufRead, BufReader, Write};
 
 use rand::Rng;
 use regex::Regex;
 
-fn read_word_list() -> (HashMap<usize, Vec<String>>, HashMap<usize, Vec<String>>) {
+fn init_word_lists() -> (HashMap<usize, Vec<String>>, HashMap<usize, Vec<String>>) {
     let mut all_words_by_length: HashMap<usize, Vec<String>> = HashMap::new();
     let mut all_punctuated_words_by_length: HashMap<usize, Vec<String>> = HashMap::new();
 
-    // Read file
-    let file = match File::open("word-lists/combined-list.txt") {
-        Ok(f) => f,
-        Err(e) => {
-            println!("Failed to open word-lists/combined-list.txt: {}", e);
-            panic!("Quitting.");
-        }
-    };
-    let reader = BufReader::new(file);
+    // Read and parse each file in word-lists/component-lists/*.txt into
+    // a set of unique words
+    let mut all_words_set = HashSet::new();
+    let folder = "word-lists";
+    let paths = std::fs::read_dir(folder).unwrap();
+    for path in paths {
+        let path = path.unwrap().path();
+        if path.is_file() && path.extension().unwrap() == "txt" {
+            let file_name = path.file_name().unwrap().to_str().unwrap();
+            if file_name.ends_with(".txt") {
+                let file = File::open(path).unwrap();
+                let reader = BufReader::new(file);
 
-    // Parse file
-    for line in reader.lines() {
-        let word = line.unwrap();
+                for line in reader.lines() {
+                    let word = line.unwrap();
+                    all_words_set.insert(word.trim().to_lowercase());
+                }
+            }
+        }
+    }
+
+    // Place words in a list of unpunctuated and a list of punctuated words
+    for word in all_words_set {
         let length = word.len();
         if word.contains("-") || word.contains("'") {
             all_punctuated_words_by_length
@@ -32,9 +42,10 @@ fn read_word_list() -> (HashMap<usize, Vec<String>>, HashMap<usize, Vec<String>>
             all_words_by_length
                 .entry(length)
                 .or_insert(Vec::new())
-                .push(word);
+                .push(word.clone());
         }
     }
+
     (all_words_by_length, all_punctuated_words_by_length)
 }
 
@@ -48,7 +59,7 @@ struct Solver {
 
 impl Solver {
     fn new() -> Solver {
-        let (all_words_by_length, all_punctuated_words_by_length) = read_word_list();
+        let (all_words_by_length, all_punctuated_words_by_length) = init_word_lists();
 
         Solver {
             all_words_by_length: all_words_by_length,
