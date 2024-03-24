@@ -1,5 +1,5 @@
 [package]
-name = "word-bomb-mini-solver"
+name = "word-bomb-defuser"
 version = "0.1.0"
 edition = "2021"
 
