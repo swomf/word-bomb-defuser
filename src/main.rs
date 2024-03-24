@@ -59,15 +59,23 @@ impl Solver {
         }
     }
 
-    fn pick_words_and_print(&self, words_by_length: &BTreeMap<usize, Vec<String>>) {
+    fn pick_words_and_print(&mut self) {
         let mut print_statements = Vec::new();
-
         let mut rng = rand::thread_rng();
-        for key in words_by_length.keys().rev() {
-            let words = words_by_length.get(key).unwrap();
-            let selected_word = words[rng.gen_range(0..words.len())].clone();
-            let word_len_str = format!("{:02}", selected_word.len());
-            print_statements.push(format!("{:02} {}", word_len_str, selected_word.clone()));
+        for words_by_length in [&mut self.previous_words_by_length, &mut self.previous_punctuated_words_by_length] {
+            let keys: Vec<_> = words_by_length.keys().rev().cloned().collect();
+            for key in keys {
+                if let Some(words) = words_by_length.get_mut(&key) {
+                    let words_len = words.len();
+                    if words_len == 0 {
+                        continue;
+                    }
+                    let desired_word_index = rng.gen_range(0..words_len);
+                    let selected_word = words.remove(desired_word_index);
+                    let word_len_str = format!("{:02}", selected_word.len());
+                    print_statements.push(format!("{:02} {}", word_len_str, selected_word.clone()));
+                }
+            }
         }
 
         for print_statement in print_statements {
@@ -78,8 +86,7 @@ impl Solver {
     fn solve(&mut self, input: String) {
         if input == self.previous_input || input == "" {
             self.previous_input = input;
-            self.pick_words_and_print(&self.previous_words_by_length);
-            self.pick_words_and_print(&self.previous_punctuated_words_by_length);
+            self.pick_words_and_print();
             return;
         }
 
@@ -110,8 +117,7 @@ impl Solver {
             }
         }
 
-        self.pick_words_and_print(&self.previous_words_by_length);
-        self.pick_words_and_print(&self.previous_punctuated_words_by_length);
+        self.pick_words_and_print();
     }
 }
 
