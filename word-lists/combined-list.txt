@@ -1163,6 +1163,7 @@ accidented
 accidently
 accidentologies
 accidentology
+accident-prone
 accidents
 accidia
 accidias
@@ -9795,6 +9796,7 @@ antihunter
 anti-huntering
 anti-hunters
 antihunters
+anti-hunting
 antihunting
 antihuntings
 antihydrogen
@@ -11308,6 +11310,7 @@ apple-pies
 apple-polish
 apple-polished
 apple-polisher
+apple-polishers
 apple-polishes
 apple-polishing
 appleringie
@@ -23172,6 +23175,7 @@ big-ticket
 big-time
 bigtime
 big-timer
+big-timers
 big-times
 biguanide
 biguanides
@@ -28350,6 +28354,8 @@ brainlessness
 brainlessnesses
 brainpan
 brainpans
+brain-picker
+brain-pickers
 brain-picking
 brain-pickings
 brainpower
@@ -28835,7 +28841,10 @@ breares
 breaskit
 breaskits
 breast
+breast-beater
+breast-beaters
 breast-beating
+breast-beatings
 breastbone
 breastbones
 breasted
@@ -39492,6 +39501,7 @@ chessplayers
 chessylite
 chessylites
 chest
+chest-beating
 chested
 chesterfield
 chesterfields
@@ -50483,6 +50493,10 @@ co-occur
 co-occurence
 co-occurences
 co-occuring
+co-occurred
+co-occurrence
+co-occurrences
+co-occurring
 co-occurs
 cooch
 cooches
@@ -55157,6 +55171,7 @@ cross-trainer
 cross-trainers
 cross-training
 cross-trainings
+cross-trains
 crosstree
 crosstrees
 crosswalk
@@ -60485,6 +60500,7 @@ deep-rooted
 deep-rootedness
 deep-rootednesses
 deeps
+deep-sea
 deep-seated
 deep-six
 deepwater
@@ -71845,6 +71861,7 @@ douaniers
 douar
 douars
 double
+double-blind
 double-book
 double-booked
 double-booking
@@ -77227,6 +77244,7 @@ e-mailed
 emailed
 e-mailer
 emailer
+e-mailers
 emailers
 e-mailing
 emailing
@@ -86508,6 +86526,7 @@ facetious
 facetiously
 facetiousness
 facetiousnesses
+face-to-face
 facets
 facetted
 facetting
@@ -86842,11 +86861,13 @@ fair
 faired
 fairer
 fairest
+fair-faced
 fairfaced
 fairgoer
 fairgoers
 fairground
 fairgrounds
+fair-haired
 fairier
 fairies
 fairiest
@@ -87704,6 +87725,7 @@ fast-forward
 fast-forwarded
 fast-forwarding
 fast-forwardings
+fast-forwards
 fasti
 fastidious
 fastidiously
@@ -87723,6 +87745,8 @@ fasting
 fastings
 fastish
 fastly
+fast-mass
+fast-moving
 fastness
 fastnesses
 fasts
@@ -89548,6 +89572,7 @@ fiddled
 fiddlededee
 fiddledeedee
 fiddle-faddle
+fiddle-faddles
 fiddlehead
 fiddleheads
 fiddleneck
@@ -91198,6 +91223,7 @@ flatettes
 flatfeet
 flatfish
 flatfishes
+flat-foot
 flatfoot
 flat-footed
 flatfooted
@@ -91508,6 +91534,7 @@ fleet-foot
 fleet-footed
 fleet-footedness
 fleet-footednesses
+fleet-footnesses
 fleeting
 fleetingly
 fleetingness
@@ -93122,6 +93149,7 @@ foosballs
 foot
 footage
 footages
+foot-and-mouth
 footbag
 footbags
 football
@@ -93132,6 +93160,7 @@ footballers
 footballing
 footballist
 footballists
+football-mad
 footballs
 footbar
 footbars
@@ -96463,7 +96492,10 @@ fullness
 fullnesses
 fulls
 full-term
+full-terms
 full-time
+full-timer
+full-timers
 fully
 fulmar
 fulmars
@@ -103774,6 +103806,8 @@ grandsir
 grandsire
 grandsires
 grandsirs
+grand-slam
+grand-slams
 grandson
 grandsons
 grandstand
@@ -107347,8 +107381,10 @@ halfen
 halfendeale
 halfendeales
 half-evergreen
+half-faced
 half-hearted
 halfhearted
+half-heartedly
 halfheartedly
 half-heartedness
 halfheartedness
@@ -108287,12 +108323,14 @@ hardboard
 hardboards
 hardbodies
 hardbody
+hard-boiled
 hardboot
 hardboots
 hardbound
 hardbounds
 hardcase
 hardcases
+hard-core
 hardcore
 hardcores
 hardcourt
@@ -109233,6 +109271,7 @@ headhunter
 headhunters
 head-hunting
 headhunting
+head-huntings
 headhuntings
 headhunts
 headier
@@ -109511,7 +109550,9 @@ heartrending
 heartrendingly
 hearts
 hearts-and-flowers
+heart-scalded
 heart-searching
+heart-searchings
 heartsease
 heartseases
 heartseed
@@ -109609,6 +109650,7 @@ heatstrokes
 heat-treat
 heat-treated
 heat-treating
+heat-treats
 heatwave
 heatwaves
 heaume
@@ -111998,6 +112040,8 @@ high-pitchedness
 high-powered
 high-pressure
 high-pressured
+high-pressures
+high-pressuring
 high-quality
 high-rankin
 high-resolution
@@ -112235,8 +112279,11 @@ hip
 hipbone
 hipbones
 hip-hop
+hip-hopper
+hip-hoppers
 hip-hops
 hiphugger
+hip-huggers
 hipless
 hiplike
 hipline
@@ -115390,6 +115437,7 @@ hundredors
 hundred-percenter
 hundred-percenters
 hundred-percentism
+hundred-percentisms
 hundreds
 hundredth
 hundredths
@@ -117512,6 +117560,7 @@ icebreaking
 icecap
 icecapped
 icecaps
+ice-cold
 iced
 icefall
 icefalls
@@ -118243,6 +118292,7 @@ illiteratenesses
 illiterates
 illites
 illitic
+ill-looking
 illnaturedly
 illness
 illnesses
@@ -127760,6 +127810,7 @@ jackies
 jacking
 jackings
 jack-in-the-box
+jack-in-the-boxes
 jackknife
 jackknifed
 jackknifes
@@ -127804,6 +127855,7 @@ jacksmith
 jacksmiths
 jacksnipe
 jacksnipes
+jacks-of-all-trades
 jackstaff
 jackstaffs
 jackstaves
@@ -134008,6 +134060,7 @@ laicizes
 laicizing
 laics
 laid
+laid-back
 laided
 laiding
 laidlier
@@ -136744,6 +136797,7 @@ lessonings
 lessons
 lessor
 lessors
+less-qualified
 lest
 lested
 lesting
@@ -137676,6 +137730,7 @@ lightness
 lightnesses
 lightning
 lightninged
+lightning-quick
 lightnings
 lightplane
 lightplanes
@@ -137768,6 +137823,7 @@ likelihoods
 likeliness
 likelinesses
 likely
+likely-looking
 liken
 likened
 likeness
@@ -139903,6 +139959,9 @@ long-windedly
 long-windedness
 long-windednesses
 longwise
+long-wool
+long-wooled
+long-wools
 longworm
 longworms
 lonicera
@@ -143423,6 +143482,8 @@ manducatory
 mandylion
 mandylions
 mane
+man-eater
+man-eating
 maneb
 manebs
 maned
@@ -145737,6 +145798,9 @@ meanly
 meanness
 meannesses
 means
+mean-spirited
+mean-spiritedness
+mean-spiritednesses
 meant
 meantime
 meantimes
@@ -154960,6 +155024,7 @@ mothball
 mothballed
 mothballing
 mothballs
+moth-eaten
 mothed
 mother
 motherboard
@@ -158400,6 +158465,7 @@ narrowings
 narrowish
 narrowly
 narrow-minded
+narrow-mindedly
 narrow-mindedness
 narrow-mindednesses
 narrowness
@@ -160222,6 +160288,7 @@ newfanglednesses
 newfangleness
 newfanglenesses
 newfangles
+new-fashioned
 newfound
 newie
 newies
@@ -160345,6 +160412,7 @@ newts
 newwaver
 newwavers
 next
+next-door
 nextdoor
 nextly
 nextness
@@ -161319,10 +161387,12 @@ nogging
 noggings
 noggins
 noggs
+no-good
 no-goodnik
 nogoodnik
 no-goodniks
 nogoodniks
+no-goods
 nogs
 noh
 nohes
@@ -166317,6 +166387,7 @@ oldens
 older
 oldest
 oldfangled
+old-fashioned
 oldie
 oldies
 oldish
@@ -166330,6 +166401,8 @@ oldsters
 oldstyle
 oldstyles
 old-time
+old-timer
+old-timers
 old-times
 oldwife
 oldwives
@@ -166803,6 +166876,7 @@ onefold
 one-hundred-percentism
 one-hundred-percentisms
 one-idea'd
+one-ideaed
 oneiric
 oneirically
 oneirocritic
@@ -166981,6 +167055,7 @@ onychophagists
 onychophagy
 onychophoran
 onychophorans
+on-year
 onymous
 onyx
 onyxes
@@ -167172,6 +167247,7 @@ open
 openabilities
 openability
 openable
+open-air
 open-and-shut
 opencast
 opened
@@ -167188,14 +167264,18 @@ openheartedness
 openheartednesses
 opening
 openings
+open-label
+open-letter
 openly
 open-minded
+open-mindedly
 open-mindedness
 open-mindednesses
 openmouthed
 openmouthedly
 openmouthedness
 openmouthednesses
+open-necked
 openness
 opennesses
 opens
@@ -170032,6 +170112,9 @@ outnumber
 outnumbered
 outnumbering
 outnumbers
+out-of-date
+out-of-door
+out-of-doors
 outoffice
 outoffices
 outorganise
@@ -170882,6 +170965,8 @@ outwriting
 outwritten
 outwrote
 outwrought
+out-year
+out-years
 outyell
 outyelled
 outyelling
@@ -177233,6 +177318,8 @@ part-score
 part-song
 part-term
 part-time
+part-timer
+part-timers
 parture
 partures
 parturiencies
@@ -177621,6 +177708,7 @@ pasturers
 pastures
 pasturing
 pasty
+pasty-faced
 pat
 pataca
 patacas
@@ -184755,6 +184843,7 @@ pingoes
 pingos
 ping-pong
 pingpong
+ping-ponged
 ping-ponging
 ping-pongs
 pingpongs
@@ -184925,7 +185014,9 @@ pinswell
 pinswells
 pint
 pinta
+pin-table
 pintable
+pin-tables
 pintables
 pintada
 pintadas
@@ -189727,6 +189818,8 @@ postcollege
 postcolleges
 postcollegiate
 postcolonial
+post-common
+post-commons
 postconception
 postconcert
 postconquest
@@ -191187,6 +191280,7 @@ preboiling
 preboils
 prebook
 prebooked
+pre-booking
 prebooking
 prebooks
 preboom
@@ -192790,6 +192884,7 @@ pre-recorded
 prerecorded
 pre-recording
 prerecording
+pre-records
 prerecords
 prerectal
 prereform
@@ -192972,6 +193067,7 @@ presentationism
 presentationist
 presentations
 presentative
+present-day
 presented
 presentee
 presenteeism
@@ -200379,9 +200475,11 @@ rabbitbrushes
 rabbited
 rabbiter
 rabbiters
+rabbit-feet
 rabbitfish
 rabbitfishes
 rabbit-foot
+rabbit-hunting
 rabbitier
 rabbitiest
 rabbiting
@@ -202338,6 +202436,7 @@ razorfish
 razorfishes
 razoring
 razors
+razor-sharp
 razure
 razures
 razz
@@ -204676,6 +204775,7 @@ redheaded
 redheads
 redhorse
 redhorses
+red-hot
 redia
 rediae
 redial
@@ -209114,8 +209214,11 @@ rerebrace
 rerebraces
 re-record
 rerecord
+re-recorded
 rerecorded
+re-recording
 rerecording
+re-records
 rerecords
 reredorter
 reredorters
@@ -215316,6 +215419,7 @@ rundled
 rundles
 rundlet
 rundlets
+run-down
 rundown
 rundowns
 runds
@@ -222243,11 +222347,13 @@ selflessnesses
 selfness
 selfnesses
 self-questioning
+self-questionings
 selfs
 selfsame
 selfsameness
 selfsamenesses
 self-searching
+self-searchings
 selfward
 selfwards
 selictar
@@ -224018,6 +224124,8 @@ sexless
 sexlessly
 sexlessness
 sexlessnesses
+sex-linkage
+sex-linkages
 sex-linked
 sexlinked
 sexlocular
@@ -226137,6 +226245,7 @@ shovings
 show
 showable
 show-and-tell
+show-and-tells
 showbiz
 showbizzes
 showbizzier
@@ -226216,7 +226325,9 @@ showmanship
 showmanships
 showmen
 shown
+show-off
 showoff
+show-offs
 showoffs
 showpiece
 showpieces
@@ -227747,6 +227858,8 @@ singing
 singingly
 singings
 single
+single-blind
+single-breasted
 singled
 singledom
 singledoms
@@ -228668,6 +228781,7 @@ skims
 skin
 skincare
 skincares
+skin-deep
 skinflick
 skinflicks
 skinflint
@@ -230014,6 +230128,7 @@ slowdowns
 slowed
 slower
 slowest
+slow-foot
 slow-footed
 slow-footedness
 slow-footednesses
@@ -230021,6 +230136,7 @@ slowing
 slowings
 slowish
 slowly
+slow-moving
 slowness
 slownesses
 slowpoke
@@ -230284,10 +230400,12 @@ smallsat
 smallsats
 smallsword
 smallswords
+small-time
 smalltime
 small-timer
 small-timers
 small-town
+small-towner
 small-towns
 smalm
 smalmed
@@ -230701,6 +230819,7 @@ smoothnesses
 smoothpate
 smoothpates
 smooths
+smooth-talking
 smoothy
 smooting
 smoots
@@ -231275,6 +231394,7 @@ snip-snapper
 snip-snappers
 snip-snapping
 snip-snaps
+snip-snap-snorum
 snip-snapsorum
 snipy
 snirt
@@ -232034,8 +232154,10 @@ softball
 softballer
 softballers
 softballs
+soft-boiled
 softbound
 softbounds
+soft-core
 softcore
 softcover
 softcovers
@@ -232391,7 +232513,9 @@ solidist
 solidists
 solidities
 solidity
+solid-looking
 solidly
+solid-mouth
 solidness
 solidnesses
 solids
@@ -236383,6 +236507,9 @@ springboks
 springbuck
 springbucks
 spring-clean
+spring-cleaned
+spring-cleaning
+spring-cleans
 springe
 springed
 springeing
@@ -245639,9 +245766,13 @@ surds
 sure
 sured
 surefire
+sure-footed
 surefooted
+sure-footedly
 surefootedly
+sure-footedness
 surefootedness
+sure-footednesses
 surefootednesses
 surely
 sureness
@@ -248169,6 +248300,7 @@ table
 tableau
 tableaus
 tableaux
+table-board
 tablecloth
 tablecloths
 tabled
@@ -256202,6 +256334,8 @@ tone
 tonearm
 tonearms
 toned
+toned-down
+tone-deaf
 toneless
 tonelessly
 tonelessness
@@ -256247,6 +256381,7 @@ tongues
 tonguester
 tonguesters
 tongue-tie
+tongue-tied
 tongue-walk
 tongue-walked
 tongue-walking
@@ -256557,6 +256692,7 @@ topmen
 topminnow
 topminnows
 topmost
+top-notch
 topnotch
 topnotcher
 topnotchers
@@ -257443,6 +257579,7 @@ toybox
 toyboxes
 toychest
 toychests
+to-year
 toyed
 toyer
 toyers
@@ -258914,6 +259051,8 @@ treasons
 treasurable
 treasure
 treasured
+treasure-house
+treasure-houses
 treasureless
 treasurer
 treasurers
@@ -261442,6 +261581,7 @@ tuft-hunted
 tuft-hunter
 tuft-huntering
 tuft-hunters
+tuft-hunting
 tuftier
 tuftiest
 tuftily
@@ -269804,6 +269944,7 @@ unselectively
 unself
 unself-conscious
 unselfconscious
+unself-consciously
 unself-consciousness
 unself-consciousnesses
 unselfed
@@ -271970,6 +272111,7 @@ uptimes
 uptitling
 uptitlings
 up-to-date
+up-to-dately
 up-to-dateness
 up-to-datenesses
 uptook
@@ -278168,11 +278310,15 @@ warfarin
 warfaring
 warfarings
 warfarins
+war-game
 wargame
+war-gamed
 wargamed
 wargamer
 wargamers
+war-games
 wargames
+war-gaming
 wargaming
 wargamings
 warhable
@@ -278411,6 +278557,7 @@ washdays
 washdown
 washdowns
 washed
+washed-out
 washen
 washer
 washered
@@ -279598,6 +279745,7 @@ wellaways
 wellbeing
 wellbeings
 wellborn
+well-conditioned
 wellcurb
 wellcurbs
 welldoer
@@ -279618,13 +279766,26 @@ wellington
 wellingtonia
 wellingtonias
 wellingtons
+well-known
 wellness
 wellnesses
+well-nigh
+well-ordered
+well-ordering
+well-orderings
+well-read
+well-ribbed-up
 wells
 wellsite
 wellsites
 wellspring
 wellsprings
+well-sprung
+well-to-pass
+well-tried
+well-trodden
+well-willer
+well-willers
 welly
 wels
 welsh
@@ -280173,6 +280334,7 @@ whewing
 whews
 whey
 wheyey
+whey-face
 wheyface
 wheyfaced
 wheyfaces
@@ -280560,7 +280722,9 @@ whitefishes
 whiteflies
 whitefly
 whitehead
+white-headed
 whiteheads
+white-hot
 whitelist
 whitelisted
 whitelisting
@@ -281204,6 +281368,10 @@ willowy
 willpower
 willpowers
 wills
+will-welled
+will-welling
+will-wisher
+will-wishers
 willy
 willyard
 willyart
@@ -281364,6 +281532,8 @@ windores
 window
 window-dress
 window-dressed
+window-dresser
+window-dressers
 window-dresses
 window-dressing
 windowed
@@ -281376,7 +281546,11 @@ windowpane
 windowpanes
 windows
 window-shop
+window-shopped
+window-shopper
+window-shoppers
 window-shopping
+window-shoppings
 window-shops
 windowsill
 windowsills
@@ -281390,6 +281564,7 @@ windproofed
 windproofing
 windproofs
 windring
+wind-rode
 windrose
 windroses
 windrow
@@ -282764,6 +282939,7 @@ worldbeats
 worlded
 worlder
 worlders
+world-famous
 worldie
 worldies
 worldlier
