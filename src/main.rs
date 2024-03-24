@@ -60,6 +60,8 @@ impl Solver {
     }
 
     fn pick_words_and_print(&mut self) {
+        // clear terminal screen
+        print!("\x1B[2J\x1B[1;1H");
         let mut print_statements = Vec::new();
         let mut rng = rand::thread_rng();
         for words_by_length in [&mut self.previous_words_by_length, &mut self.previous_punctuated_words_by_length] {
