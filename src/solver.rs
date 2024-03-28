@@ -7,6 +7,8 @@ use std::{
 use rand::Rng;
 use regex::Regex;
 
+/// Only used once in Solver::new to collate all word-lists, then sort
+/// by punctuation (', -) and non-punctuation
 fn init_word_lists() -> (HashMap<usize, Vec<String>>, HashMap<usize, Vec<String>>) {
     let mut all_words_by_length: HashMap<usize, Vec<String>> = HashMap::new();
     let mut all_punctuated_words_by_length: HashMap<usize, Vec<String>> = HashMap::new();
@@ -130,5 +132,17 @@ impl Solver {
             Solver::format_solution_list(&mut self.solution_words_by_length),
             Solver::format_solution_list(&mut self.solution_punctuated_words_by_length),
         )
+    }
+
+    pub fn get_size(&self) -> usize {
+        let mut total_words = 0;
+        for words in self.all_words_by_length.values() {
+            total_words += words.len();
+        }
+        for words in self.all_punctuated_words_by_length.values() {
+            total_words += words.len();
+        }
+
+        total_words
     }
 }
