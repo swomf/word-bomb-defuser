@@ -7,8 +7,8 @@ use std::{
 use rand::Rng;
 use regex::Regex;
 
-/// Only used once in Solver::new to collate all word-lists, then sort
-/// by punctuation (', -) and non-punctuation
+/// Only used once in `Solver::new` to collate all word-lists, then sort
+/// by punctuation `' -` and non-punctuation
 fn init_word_lists() -> (HashMap<usize, Vec<String>>, HashMap<usize, Vec<String>>) {
     let mut all_words_by_length: HashMap<usize, Vec<String>> = HashMap::new();
     let mut all_punctuated_words_by_length: HashMap<usize, Vec<String>> = HashMap::new();
@@ -27,8 +27,10 @@ fn init_word_lists() -> (HashMap<usize, Vec<String>>, HashMap<usize, Vec<String>
                 let reader = BufReader::new(file);
 
                 for line in reader.lines() {
-                    let word = line.unwrap();
-                    all_words_set.insert(word.trim().to_lowercase());
+                    let word = line.unwrap().trim().to_lowercase();
+                    if word.len() != 0 {
+                        all_words_set.insert(word.trim().to_lowercase());
+                    }
                 }
             }
         }
@@ -54,9 +56,13 @@ fn init_word_lists() -> (HashMap<usize, Vec<String>>, HashMap<usize, Vec<String>
 }
 
 pub struct Solver {
+    /// A map of lengths to lists of words of that length. Not meant to be changed.
     all_words_by_length: HashMap<usize, Vec<String>>,
+    /// A map of lengths to list of punctuated words of that length. Not meant to be changed.
     all_punctuated_words_by_length: HashMap<usize, Vec<String>>,
+    /// Solutions of the latest query.
     solution_words_by_length: HashMap<usize, Vec<String>>,
+    /// Punctuated solutions of the latest query. Punctuation includes ' and -
     solution_punctuated_words_by_length: HashMap<usize, Vec<String>>,
     previous_input: String,
 }
@@ -108,7 +114,7 @@ impl Solver {
         solution_list_formatted
     }
 
-    pub fn solve_prompt(&mut self, input: String) -> (Vec<String>, Vec<String>) {
+    pub fn solve_prompt(&mut self, input: String) -> (usize, Vec<String>, Vec<String>) {
         if input != self.previous_input && !input.is_empty() {
             // Input is new, do not reuse previous solution list
             let re = Regex::new(&input).unwrap();
@@ -129,6 +135,7 @@ impl Solver {
 
         // Format and return the solution lists
         (
+            self.get_solution_set_size(), // call before changing solution_words
             Solver::format_solution_list(&mut self.solution_words_by_length),
             Solver::format_solution_list(&mut self.solution_punctuated_words_by_length),
         )
@@ -144,5 +151,17 @@ impl Solver {
         }
 
         total_words
+    }
+
+    fn get_solution_set_size(&self) -> usize {
+        let mut total_solution_words = 0;
+        for words in self.solution_words_by_length.values() {
+            total_solution_words += words.len();
+        }
+        for words in self.solution_punctuated_words_by_length.values() {
+            total_solution_words += words.len();
+        }
+
+        total_solution_words
     }
 }

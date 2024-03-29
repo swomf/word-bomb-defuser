@@ -22,7 +22,9 @@ fn main() -> std::io::Result<()> {
         std::io::stdin().read_line(&mut user_input)?;
         user_input = user_input.trim().to_lowercase();
 
-        let (word_list, punctuated_word_list) = solver.solve_prompt(user_input.clone());
+        let (solution_length, word_list, punctuated_word_list) =
+            solver.solve_prompt(user_input.clone());
+        println!("SOLUTIONS FOUND: {}", solution_length);
         for word in word_list {
             println!("{}", word);
         }
