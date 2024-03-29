@@ -1,11 +1,9 @@
-use std::{
-    collections::{HashMap, HashSet},
-    fs::File,
-    io::{BufRead, BufReader},
-};
+use std::collections::{HashMap, HashSet};
 
 use rand::Rng;
 use regex::Regex;
+
+const WORDS: &str = include_str!("../word-lists/vivi-result-286594.txt");
 
 /// Only used once in `Solver::new` to collate all word-lists, then sort
 /// by punctuation `' -` and non-punctuation
@@ -16,23 +14,11 @@ fn init_word_lists() -> (HashMap<usize, Vec<String>>, HashMap<usize, Vec<String>
     // Read and parse each file in word-lists/component-lists/*.txt into
     // a set of unique words
     let mut all_words_set = HashSet::new();
-    let folder = "word-lists";
-    let paths = std::fs::read_dir(folder).unwrap();
-    for path in paths {
-        let path = path.unwrap().path();
-        if path.is_file() && path.extension().unwrap() == "txt" {
-            let file_name = path.file_name().unwrap().to_str().unwrap();
-            if file_name.ends_with(".txt") {
-                let file = File::open(path).unwrap();
-                let reader = BufReader::new(file);
 
-                for line in reader.lines() {
-                    let word = line.unwrap().trim().to_lowercase();
-                    if word.len() != 0 {
-                        all_words_set.insert(word.trim().to_lowercase());
-                    }
-                }
-            }
+    for line in WORDS.lines() {
+        let word = line.trim().to_lowercase();
+        if word.len() != 0 {
+            all_words_set.insert(word.trim().to_lowercase());
         }
     }
 
