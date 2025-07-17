@@ -28,7 +28,7 @@ fn init_word_lists() -> (HashMap<usize, Vec<String>>, HashMap<usize, Vec<String>
 
                 for line in reader.lines() {
                     let word = line.unwrap().trim().to_lowercase();
-                    if word.len() != 0 {
+                    if !word.is_empty() {
                         all_words_set.insert(word.trim().to_lowercase());
                     }
                 }
@@ -42,12 +42,12 @@ fn init_word_lists() -> (HashMap<usize, Vec<String>>, HashMap<usize, Vec<String>
         if word.contains("-") || word.contains("'") {
             all_punctuated_words_by_length
                 .entry(length)
-                .or_insert(Vec::new())
+                .or_default()
                 .push(word);
         } else {
             all_words_by_length
                 .entry(length)
-                .or_insert(Vec::new())
+                .or_default()
                 .push(word.clone());
         }
     }
@@ -72,8 +72,8 @@ impl Solver {
         let (all_words_by_length, all_punctuated_words_by_length) = init_word_lists();
 
         Solver {
-            all_words_by_length: all_words_by_length,
-            all_punctuated_words_by_length: all_punctuated_words_by_length,
+            all_words_by_length,
+            all_punctuated_words_by_length,
             solution_words_by_length: HashMap::new(),
             solution_punctuated_words_by_length: HashMap::new(),
             previous_input: String::new(),
@@ -90,8 +90,8 @@ impl Solver {
             for word in words {
                 if regex.is_match(word) {
                     list_to_overwrite
-                        .entry(length.clone())
-                        .or_insert(Vec::new())
+                        .entry(*length)
+                        .or_default()
                         .push(word.clone());
                 }
             }
@@ -101,10 +101,10 @@ impl Solver {
     fn format_solution_list(solution_list: &mut HashMap<usize, Vec<String>>) -> Vec<String> {
         let mut solution_list_formatted = Vec::new();
         for (length, words) in solution_list.iter_mut() {
-            if words.len() == 0 {
+            if words.is_empty() {
                 continue;
             }
-            let random_index = rand::thread_rng().gen_range(0..words.len());
+            let random_index = rand::rng().random_range(0..words.len());
             let selected_word = words.remove(random_index);
             let word_len_str = format!("{:02}", length);
             solution_list_formatted.push(format!("{:02} {}", word_len_str, selected_word.clone()));
