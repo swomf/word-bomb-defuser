@@ -13,7 +13,7 @@ fn init_word_lists() -> (HashMap<usize, Vec<String>>, HashMap<usize, Vec<String>
     let mut all_words_by_length: HashMap<usize, Vec<String>> = HashMap::new();
     let mut all_punctuated_words_by_length: HashMap<usize, Vec<String>> = HashMap::new();
 
-    // Read and parse each file in word-lists/component-lists/*.txt into
+    // Read and parse each file in word-lists/*.txt into
     // a set of unique words
     let mut all_words_set = HashSet::new();
     let folder = "word-lists";

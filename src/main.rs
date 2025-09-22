@@ -3,16 +3,12 @@ use std::io::Write;
 mod solver;
 use solver::Solver;
 
-const TOTAL_WORD_BOMB_MINI_DICTIONARY_SIZE: usize = 286594;
 fn main() -> std::io::Result<()> {
     let mut solver = Solver::new();
     let mut user_input = String::new();
 
-    println!(
-        "Dictionary size: {}/{}",
-        solver.get_size(),
-        TOTAL_WORD_BOMB_MINI_DICTIONARY_SIZE
-    );
+    println!("Dictionary size: {}", solver.get_size());
+
     loop {
         print!("Enter prompt: ");
         std::io::stdout().flush().unwrap();
@@ -24,12 +20,12 @@ fn main() -> std::io::Result<()> {
 
         let (solution_length, word_list, punctuated_word_list) =
             solver.solve_prompt(user_input.clone());
-        println!("SOLUTIONS FOUND: {}", solution_length);
+        println!("SOLUTIONS FOUND: {solution_length}");
         for word in word_list {
-            println!("{}", word);
+            println!("{word}");
         }
         for word in punctuated_word_list {
-            println!("{}", word);
+            println!("{word}");
         }
     }
 }
