@@ -6,5 +6,5 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-rand = "0.9.1"
-regex = "1.10.6"
+rand = "0.10.2"
+regex = "1.13.1"

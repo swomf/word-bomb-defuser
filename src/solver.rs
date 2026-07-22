@@ -4,7 +4,7 @@ use std::{
     io::{BufRead, BufReader},
 };
 
-use rand::Rng;
+use rand::RngExt;
 use regex::Regex;
 
 /// Only used once in `Solver::new` to collate all word-lists, then sort
